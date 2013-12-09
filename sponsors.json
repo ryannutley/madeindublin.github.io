@@ -1,0 +1,46 @@
+{
+	"major": [],
+	"other": [
+		{
+			"tier": 2,
+			"twitter": "madanbabu",
+			"name": "Madan Babu"
+		},
+		{
+			"tier": 0,
+			"twitter": "sarahadowney",
+			"name": "Sarah Downey"
+		}
+	],
+	"desired": [
+		"Google",
+		"Apple",
+		"Facebook",
+		"Twitter",
+		"Codecademy",
+		"Code.org",
+		"Udacity",
+		"General Assembly",
+		"New York Tech Meetup",
+		"Amazon",
+		"Microsoft",
+		"Adobe",
+		"Redhat",
+		"Salesforce",
+		"Square",
+		"LinkedIn",
+		"Kickstarter",
+		"Indiegogo",
+		"Intel",
+		"Meetup",
+		"Palantir",
+		"Andreessen horowitz",
+		"Union Square Ventures",
+		"SV Angel",
+		"Mozilla",
+		"Code for America",
+		"Hacker School",
+		"YCombinator",
+		"Techstars"
+	]
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "name": "Soundtravel",
+    "description": "Travel Discovery for Music Lovers - Private beta",
+    "$then": ["Similar to Soundtravel"],
+    "home": "http://soundtravel.co",
+    "links": [
+      {
+        "name": "Twitter",
+        "level": 0,
+        "url": "http://twitter.com/soundtravelapp"
+      },
+      {
+        "name": "AngelList",
+        "level": 0,
+        "url": "http://angel.co/soundtravel"
+      },
+      {
+        "name": "Other link2",
+        "level": 1,
+        "url": "http://twitter.com/soundtravelapp"
+      },
+      {
+        "name": "Other link3",
+        "level": 2,
+        "url": "http://twitter.com/soundtravelapp"
+      }
+    ]
+  },
+  {
+    "name": "your statup here?",
+    "description": "description",
+    "$then": ["similar", "other", "startups"],
+    "home": "http://mystartupapp.com",
+    "links": [
+      {
+        "name": "Twitter",
+        "level": 0,
+        "url": "http://twitter.com/mystartupapp"
+      },
+      {
+        "name": "Angellist",
+        "level": 0,
+        "url": "http://angel.co/mystartupapp"
+      }
+    ]
+  },
+  {
+    "name": "Similar to Soundtravel",
+    "description": "description",
+    "$then": ["similar", "other", "startups"],
+    "home": "http://mystartupapp.com",
+    "links": [
+      {
+        "name": "Twitter",
+        "level": 0,
+        "url": "http://twitter.com/mystartupapp"
+      },
+      {
+        "name": "Angellist",
+        "level": 0,
+        "url": "http://angel.co/mystartupapp"
+      }
+    ]
+  },
+  {
+    "name": "your statup here?",
+    "description": "description",
+    "$then": ["similar", "other", "startups"],
+    "home": "http://mystartupapp.com",
+    "links": [
+      {
+        "name": "Twitter",
+        "level": 0,
+        "url": "http://twitter.com/mystartupapp"
+      },
+      {
+        "name": "Angellist",
+        "level": 0,
+        "url": "http://angel.co/mystartupapp"
+      }
+    ]
+  },
+  {
+    "name": "your statup here?",
+    "description": "description",
+    "$then": ["similar", "other", "startups"],
+    "home": "http://mystartupapp.com",
+    "links": [
+      {
+        "name": "Twitter",
+        "level": 0,
+        "url": "http://twitter.com/mystartupapp"
+      },
+      {
+        "name": "Angellist",
+        "level": 0,
+        "url": "http://angel.co/mystartupapp"
+      }
+    ]
+  },
+  {
+    "name": "your statup here?",
+    "description": "description",
+    "$then": ["similar", "other", "startups"],
+    "home": "http://mystartupapp.com",
+    "links": [
+      {
+        "name": "Twitter",
+        "level": 0,
+        "url": "http://twitter.com/mystartupapp"
+      },
+      {
+        "name": "Angellist",
+        "level": 0,
+        "url": "http://angel.co/mystartupapp"
+      }
+    ]
+  }
+]

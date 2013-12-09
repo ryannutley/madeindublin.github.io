@@ -1,52 +1,261 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="myApp"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Made in Ireland - All the Startups of the Irish Capital! Digestible</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="fb:admins" content="..." />
+    <meta name="pocket-site-verification" content="..." />
+    <meta property="og:image" content="http://www..../images/logo.png"/>
+    <meta property="og:title" content="Made in Ireland - All the Startups of the Irish Capital"/>
+    <meta property="og:url" content="http://www.madeindublin.org/"/>
+    <meta property="og:site_name" content="Made in Ireland"/>
+    <meta property="og:description" content="All the Startups of the Irish Capital! Digestible">
+    <meta property="og:type" content="website"/>
+    <meta name="description" content="All the Startups of the Irish Capital! Digestible">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Made in Dublin : " />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 
-    <title>Made in Dublin</title>
-  </head>
+    <!-- Twitter -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</head>
+<body ng-controller="masterCtrl">
+    <!-- Facebook -->
+    <div id="fb-root"></div>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-  <body>
+    <!-- Add your site or application content here -->
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" name="sponsorship" id="sponsorship"> <!-- Paypal Form -->
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="894L6CFYWV3BG">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        <div id="hide" ng-hide="working">
+            <div id="message" style="display: none;">
+                <h1>Making some changes</h1>
+                <p>Please come back in a few moments! If you want updates, tweet at us <a href="http://twitter.com/made_in_dublin">@made_in_dublin</a></p>
+                <p>Developers, take a look at <a href="https://github.com/madeindublin/madeindublin.github.io" target="_blank">the GitHub</a></p>
+            </div>
+        </div>
+        <!-- <div id="donate">
+            <h2>Find this useful? Give back and <a target="_self" href="#" ng-click="fire_sponsorship()">become a sponsor</a> for just $1!</h2>
+        </div> -->
+        <!-- <div id="toolbar" ng-show="current_box != null">
+            <div class="row-fluid">
+                <a ng-click="toggleInactiveBoxes()" href="#{{ current_box }}">{{ toggleAction() }} inactive boxes</a> | <a ng-click="current_box = null" href="#{{ current_box }}">Close active box</a>
+            </div>
+        </div> -->
+        <div id="modal" ng-show="more_index != null">
+            <h2>{{ boxes[more_index].name  }}</h2>
+            <div class="row-fluid">
+                <div class="span2 offset3">
+                    <h4>Easy</h4>
+                    <div ng-repeat="($key, link) in boxes[more_index].links.findAll({level: 0})">
+                        <a target="_blank" href="{{ link.url  }}">{{ link.name  }}</a>
+                    </div>
+                    <div ng-show="boxes[more_index].links.findAll({level: 0}).length == 0">
+                        <a target="_blank" href="https://github.com/madeindublin/madeindublin.github.io" class="nolink">No links yet! Add one</a>
+                    </div>
+                </div>
+                <div class="span2">
+                    <h4>Medium</h4>
+                    <div ng-repeat="($key, link) in boxes[more_index].links.findAll({level: 1})">
+                        <a target="_blank" href="{{ link.url  }}">{{ link.name  }}</a>
+                    </div>
+                    <div ng-show="boxes[more_index].links.findAll({level: 1}).length == 0">
+                        <a target="_blank" href="https://github.com/madeindublin/madeindublin.github.io" class="nolink">No links yet! Add one</a>
+                    </div>
+                </div>
+                <div class="span2">
+                    <h4>Hard</h4>
+                    <div ng-repeat="($key, link) in boxes[more_index].links.findAll({level: 2})">
+                        <a target="_blank" href="{{ link.url }}">{{ link.name  }}</a>
+                    </div>
+                    <div ng-show="boxes[more_index].links.findAll({level: 2}).length == 0">
+                        <a target="_blank" href="https://github.com/madeindublin/madeindublin.github.io" class="nolink">No links yet! Add one</a>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <a href="" ng-click="more_index = null">Close</a>
+        </div>
+        <div id="container">
+            <header>
+                <h1>Made in Dublin</h1>
+                <h4 style="padding: 0px; margin: 0px;">All the Startups of the Vibrant Irish Capital. Digestible.</h4>
+                <!-- <p style="padding: 0px; margin: 0px; color: #999;">Beginners, start by clicking the <strong>html</strong> box and the next lessons you should learn will get highlighted.</p> -->
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/madeindublin">View on GitHub</a>
+                <p>Made in Dublin by <a href="http://twitter.com/alexberegszaszi" target="_blank">@alexberegszaszi</a> and <a href="http://twitter.com/gianpaj" target="_blank">@gianpaj</a></p>
 
-          <h1 id="project_title">Made in Dublin</h1>
-          <h2 id="project_tagline"></h2>
+                <div style="padding-left: 20px;">
+                    <div ng-show="more_index == null" class="fb-like" data-href="http://www.madeindublin.org/" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
 
-        </header>
-    </div>
+                    &nbsp;<a href="https://twitter.com/share" class="twitter-share-button" data-text="#madeindublin An awesome cheat sheet with all the Dublin Startups. Check it out!" data-via="made_in_dublin">Tweet</a>
+                </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-made-in-dublin" class="anchor" href="#welcome-to-made-in-dublin"><span class="octicon octicon-link"></span></a>Welcome to Made in Dublin.</h3>
+                <!-- <p id="donate_line">Find this useful? Consider donating $<input id="max_amount" type="text" name="max_amount" value="10" placeholder="1 min." style="width: 50px;" ng-focus="show_sponsorship()"> a month and help others learn to code. <a target="_self" href="#" ng-click="fire_sponsorship()">Give back</a></p> -->
+                <div id="sponsorship_tiers" class="row-fluid hidden">
+                    <div class="row-fluid"><p>Contribute as little as $1. Cancel any amount at any time</p></div>
+                    <div class="row-fluid">
+                        <div class="span4 sponsorship_tier" ng-click="set_sponsorship(10)">
+                            <h3>$10</h3>
+                            <p>Added to <a href="#sponsors">sponsors section</a></p>
+                        </div>
+                        <div class="span4 sponsorship_tier" ng-click="set_sponsorship(25)">
+                            <h3>$25</h3>
+                            <p>Link to your <a href="#sponsors">twitter</a></p>
+                        </div>
+                        <div class="span4 sponsorship_tier" ng-click="set_sponsorship(50)">
+                            <h3>$50</h3>
+                            <p>Video chat with me</p>
+                        </div>
+                    </div>
+                 </div>
+                <div class="row-fluid" ng-show="false">
+                     <div class="span8 offset2" id="donate_container">
+                        <div id="donate_progress" style="width: {{ donate_progress }}%;">
+                            <div id="donate_progress_number">{{ donate_progress }}%</div>
+                        </div>
+                        <div id="donate_progress_label">Progress to donations goal</div>
+                     </div>
+                 </div>
+            </header>
+            <div id="welcome_container" class="top_info" ng-hide="!welcome">
+                <div class="row-fluid">
+                    <div class="span2 offset1" id="welcome_image">
+                        <!-- <p><img src="images/author.png" alt="Jon Chan" width="175" height="175"></p> -->
+                        <!-- <a href="https://twitter.com/made_in_dublin" target="_blank" class="twitter-follow-button" data-show-count="false" data-size="large">@made_in_dublin</a> -->
+                    </div>
+                    <div class="span8">
+                        <h2>Welcome</h2>
+                        <p>We created Made in Dublin to help people learn about the startups in this Vibrant City. This is our way of passing on the knowledge that we have about tech startups to others. <a href="#" ng-click="welcome = false; next_steps = true;">Let's get started</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="next_steps_container" class="top_info" ng-hide="!next_steps">
+                <div class="row-fluid">
+                    <div class="span2 offset1" id="next_steps_image">
+                    </div>
+                    <div class="span8">
+                        <h2>How to use Made in Dublin</h2>
+                        <p>There's no right way to use Made in Dublin, but there are definitely things you should keep in mind</p>
+                        <ul>
+                            <li>When you click on a box of a Startup, the next lessons you get will be highlighted</li>
+                            <li>You can see more links for each box by clicking 'more' at the bottom</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="box_container" class="container-fluid">
+                <div class="span3 box_container">
+                    <div id="started" class="box">
+                        <h2>Start here</h2>
+                        <p>Learn more about this site</p>
+                        <div>
+                            <a href="#" ng-click="welcome = true; next_steps = false;">Welcome</a>
+                        </div>
+                        <div>
+                            <a href="#" ng-click="welcome = false; next_steps = true">Next steps</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3 box_container hidden-{{ in_next_boxes(box.name) }}-{{ !showInactiveBoxes }}" ng-repeat="($index, box) in boxes">
+                    <div id="{{ box.name }}" class="box highlight-{{ in_next_boxes(box.name) }} hidden-{{ in_next_boxes(box.name) }}-{{ !showInactiveBoxes }}" ng-click="set_next_boxes(box, $index)">
+                        <a name="{{ box.name }}"></a>
+                        <a target="_blank" class="title" name="{{ box.name }}" href="{{ box.home }}">{{ box.name }}</a>                        
+                        <p>{{ box.description }}</p>
+                        <div ng-repeat="($key, link) in box.links.findAll({level: 0})">
+                            <a target="_blank" href="{{ link.url  }}" ng-show="$key < 2">{{ link.name  }}</a>
+                        </div>
+                        <div ng-show="box.links.length > 2">
+                            <a target="_blank" href="" ng-click="show_more($index)">More</a>
+                        </div>
+                        <div ng-show="box.links.length == 0">
+                            <a target="_blank" href="https://github.com/madeindublin/madeindublin.github.io" class="nolink">No links yet! Add one</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3 box_container">
+                    <div id="contact" class="box">
+                        <h2>About Made in Dublin</h2>
+                        <p>Thanks for checking this out!</p>
+                        <div>
+                            <a target="_blank" href="http://www.linkedin.com/in/jonhmchan">Resume</a>
+                        </div>
+                        <div>
+                            <a target="_blank" href="mailto:me@jonhmchan.com">Email</a>
+                        </div>
+                        <div>
+                            <a target="_blank" href="http://jonhmchan.com/">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="pull" class="container-fluid">
+                <h2>Have a suggestion or want to add? Make a <a href="https://github.com/madeindublin/madeindublin.github.io" target="_blank">pull request</a></h2>
+            </div>
+            <!-- <div id="sponsors" class="container-fluid"> 
+                <a name="sponsors"></a>     
+                <h2>sponsors</h2>
+                <div class="span3 sponsor" ng-repeat="sponsor in sponsors.other">
+                    <span ng-show="sponsor.tier == 0">{{ sponsor.name }}</span>
+                    <a href="http://twitter.com/{{ sponsor.twitter }}" target="_blank" class="sponsor_top_{{ sponsor.tier == 2 }} " ng-show="sponsor.tier > 0">{{ sponsor.name }}</a>
+                </div>
+            </div> -->
+        </div>
+    </form>
 
-<p>Dublin is a great place with a vibrant tech startup community.</p>
+    <!-- Typekit -->
+    <!-- <script type="text/javascript" src="//use.typekit.net/nfk4tql.js"></script> -->
+    <!-- <script type="text/javascript">try{Typekit.load();}catch(e){}</script> -->
 
-<h3>
-<a name="participants-to-be-listed-here" class="anchor" href="#participants-to-be-listed-here"><span class="octicon octicon-link"></span></a>Participants to be listed here</h3>
+    <!-- Sugar -->
+    <script src="http://sugarjs.com/release/current/sugar.min.js"></script>
 
-<p>Check back soon!</p>
-      </section>
-    </div>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.9.1.min.js"><\/script>')</script> -->
 
-    
+    <!-- Ribbon -->
+    <script type="text/javascript" src="javascripts/ribbon-modal.mod.js"></script>
 
-  </body>
+    <script src="javascripts/plugins.js"></script>
+    <script src="content_backup.js"></script>
+    <script src="javascripts/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- Facebook -->
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=649386288440199";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</body>
 </html>
