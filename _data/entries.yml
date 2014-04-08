@@ -1,9 +1,16 @@
 - name: Soundtravel
   category: beta
   url: soundtravel.co
-  description: Travel discovery for music lowers.
+  description: Travel discovery for music lovers.
   twitter: soundtravelapp
   facebook: soundtravelapp
+
+- name: TRIBEfoodie
+  category: beta
+  url: tribefoodie.com
+  description: TRIBEfoodie is a social network app for people who love dining out, to connect with others that know good food around town and to get exclusive treatment at their favourite restaurants.
+  twitter: tribefoodie
+  facebook: tribefoodie
 
 - name: Your Startup
   category: startup
