@@ -211,6 +211,9 @@ module.exports = function(grunt) {
       site: {
         files: [ root + '_data/**/*', root + '_includes/**/*', root + '*'],
         tasks: ['compile-site'],
+        options: {
+          livereload: true
+        }
       },
     },
   });
@@ -243,7 +246,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['compile']);
 
   // watch tasks
-  grunt.registerTask('watch', ['watch']);
+  // grunt.registerTask('watch', ['watch']);
   grunt.registerTask('watch-js', ['watch:js']);
   grunt.registerTask('watch-less', ['watch:less']);
   grunt.registerTask('watch-site', ['watch:site']);
