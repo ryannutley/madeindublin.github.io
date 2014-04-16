@@ -62,7 +62,7 @@
 			<ul class="entry-list js-entry-list">
 				{% for entry in site.data.entries %}
 					<li class="entry js-entry" data-category="{{ entry.category }}">
-                                        {% if entry.category == 'faq' %}
+										{% if entry.category == 'faq' %}
 						<div class="row">
 							<div class="col-md-12">
 								<h2>Q: {{ entry.q }}</h2>
