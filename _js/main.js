@@ -98,12 +98,21 @@
         // hide FAQ
         cache.$faq.hide();
 
+        // set current filter by location hash
+        if (location.hash.length > 1) {
+            var filter = location.hash.substr(1).toLowerCase();
+            if ([ "all", "betas", "startups", "companies", "faq" ].indexOf(filter) >= 0)
+                Collection.callFilter(filter);
+        }
+
         // initialize listener for desktop tabs
         c.$tab.on('click', 'a', function (event) {
             event.preventDefault();
 
             var filter = $(event.target).data('sort');
             Collection.callFilter(filter);
+
+            location.hash = '#' + filter;
 
             return false;
         });
@@ -114,6 +123,8 @@
 
             var filter = $(event.target.selectedOptions[0]).data('sort');
             Collection.callFilter(filter);
+
+            location.hash = '#' + filter;
 
             return false;
         });
