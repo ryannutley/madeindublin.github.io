@@ -63,5 +63,15 @@
       </ul>
 
 - category: faq
+  q: What about Twitter?
+  a: >
+      We're on <a href="https://twitter.com/made_in_dublin" target="_blank">Twitter</a> as you might have noticed. Also our members are collected into Twitter lists:
+      <ul>
+      <li><a href="https://twitter.com/made_in_dublin/lists/betas" target="_blank">Betas</a></li>
+      <li><a href="https://twitter.com/made_in_dublin/lists/startups" target="_blank">Startups</a></li>
+      <li><a href="https://twitter.com/made_in_dublin/lists/companies" target="_blank">Companies</a></li>
+      </ul>
+
+- category: faq
   q: Didn’t I see sites similar to “Made in Dublin”?
   a: That is entirely possible. We would like to thank here <a href="http://nytm.org/made" target="_blank">Made in New York City</a> and <a href="http://montrealcollective.com/" target="_blank">Montreal Collective</a> for inspiration.
