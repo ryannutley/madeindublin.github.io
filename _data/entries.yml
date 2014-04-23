@@ -12,9 +12,11 @@
   twitter: tribefoodie
   facebook: tribefoodie
 
-- name: Your Startup
+- name: Fund Recs
   category: startup
-  description: Get your startup featured here. See the FAQ for directions.
+  url: fundrecs.com
+  description: Cloud based reconciliation software for the Funds Industry
+  twitter: fundrecs
 
 - name: Your Company
   category: company
