@@ -61,8 +61,13 @@
 
 			<ul class="entry-list js-entry-list">
 				{% for entry in site.data.entries %}
+					{% if entry.category == 'faq' %}
+					<a name="{{ entry.q | remove:'.' | remove:'?' | remove:'“' | remove:'”' | remove:'’' | replace:'&','and' | downcase | split:' ' | join:'-' }}"></a>
+					{% else %}
+					<a name="{{ entry.name | remove:'.' | replace:'&','and' | downcase | split:' ' | join:'-' }}"></a>
+					{% endif %}
 					<li class="entry js-entry" data-category="{{ entry.category }}">
-										{% if entry.category == 'faq' %}
+					{% if entry.category == 'faq' %}
 						<div class="row">
 							<div class="col-md-12">
 								<h2>Q: {{ entry.q }}</h2>
@@ -118,7 +123,7 @@
 			<div class="footer">
 				<div class="row">
 					<div class="col-sm-6 col-sm-push-6">
-						<h5 class="footer__text footer__text--right"><a href="https://github.com/madeindublin/madeindublin.github.io" target="_blank" class="js-to-repo">Submit an entry</a></h5>
+						<h5 class="footer__text footer__text--right"><a onclick="Collection.callFilter('faq');" href="#how-can-we-participate" class="js-to-repo">Submit an entry</a></h5>
 					</div> <!-- close .col -->
 					<div class="col-sm-6 col-sm-pull-6">
 						<h5 class="footer__text">Run by <a href="https://twitter.com/alexberegszaszi" target="_blank" class="js-to-alex">@alexberegszaszi</a> and <a href="https://twitter.com/gianpaj" target="_blank" class="js-to-gianpaj">@gianpaj</a></h5>
