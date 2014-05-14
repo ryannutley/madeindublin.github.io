@@ -21,9 +21,7 @@
 
 - name: Your Company
   category: company
-  description: >
-      Get your company featured here. See the FAQ for directions.
-#      We're also looking for a new logo. Email us at <a href="info@madeindublin.org">info@madeindublin.org</a> if you'd like to do it simply for the love of the startup community in Dublin.
+  description: Get your company featured here. See the FAQ for instructions.
 
 
 #
@@ -33,8 +31,10 @@
 - category: faq
   q: What is Made in Dublin?
   a: >
-      Made in Dublin is a crowdsourced list of technology businesses created in the capital of Ireland, Dublin, one of the biggest technology hubs in Europe. <br>
-      The businesses listed in this site are founded in Dublin or a large majority of their products are created in Dublin. <br>
+      Made in Dublin is a crowdsourced list of technology businesses created in the capital of Ireland, Dublin, one of the biggest technology hubs in Europe.
+      <br>
+      The businesses listed in this site are founded in Dublin or a large majority of their products are created in Dublin.
+      <br>
       They also display the Made in Dublin logo (coming soon) and link back from their site.
 
 - category: faq
