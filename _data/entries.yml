@@ -20,7 +20,9 @@
 
 - name: Your Company
   category: company
-  description: Get your company featured here. See the FAQ for directions.
+  description: >
+      Get your company featured here. See the FAQ for directions.
+#      We're also looking for a new logo. Email us at <a href="info@madeindublin.org">info@madeindublin.org</a> if you'd like to do it simply for the love of the startup community in Dublin.
 
 
 #
@@ -30,13 +32,14 @@
 - category: faq
   q: What is Made in Dublin?
   a: >
-      Made in Dublin is a crowdsourced list of technology businesses created in the capital of Ireland, Dublin, one of the biggest technology hubs in Europe.
-      The businesses listed in this site are founded in Dublin or a large majority of their products are created in Dublin.
+      Made in Dublin is a crowdsourced list of technology businesses created in the capital of Ireland, Dublin, one of the biggest technology hubs in Europe. <br>
+      The businesses listed in this site are founded in Dublin or a large majority of their products are created in Dublin. <br>
       They also display the Made in Dublin logo (coming soon) and link back from their site.
 
 - category: faq
   q: What does “are created in Dublin” mean?
-  a: A large proportion of their development or manufacturing takes places in Dublin.
+  a: >
+      Companies listed here have a large proportion of development or manufacturing taking place in Dublin. These provide a software or hardware products. Not only services, i.e. consultancy
 
 - category: faq
   q: How can we participate?
@@ -76,4 +79,5 @@
 
 - category: faq
   q: Didn’t I see sites similar to “Made in Dublin”?
-  a: That is entirely possible. We would like to thank here <a href="http://nytm.org/made" target="_blank">Made in New York City</a> and <a href="http://montrealcollective.com/" target="_blank">Montreal Collective</a> for inspiration.
+  a: >
+      That is entirely possible. We would like to thank here <a href="http://nytm.org/made" target="_blank">Made in New York City</a> and <a href="http://montrealcollective.com/" target="_blank">Montreal Collective</a> for inspiration.
