@@ -1,10 +1,3 @@
-- name: Soundtravel
-  category: beta
-  url: soundtravel.co
-  description: Travel discovery for music lovers.
-  twitter: soundtravelapp
-  facebook: soundtravelapp
-
 - name: TRIBEfoodie
   category: beta
   url: tribefoodie.com
@@ -17,6 +10,13 @@
   url: fundrecs.com
   description: Cloud based reconciliation software for the Funds Industry
   twitter: fundrecs
+
+# - name: Soundtravel
+#   category: beta
+#   url: soundtravel.co
+#   description: See your favourite artists in concerts around the world.
+#   twitter: soundtravelapp
+#   facebook: soundtravelapp
 
 - name: Your Company
   category: company
