@@ -1,5 +1,5 @@
 name: Made in Dublin
-description: A collection of products and services crafted in Dublin.
+description: A collection of internet companies made with ♥ in Dublin.
 keywords: dublin, ireland, startups, companies, tech, technology
 
 exclude: [_less, _img, _css, _js, _icons, node_modules, s3_website.yml, package.json, README.md, GruntFile.js, Gemfile, Gemfile.lock]
