@@ -1,11 +1,15 @@
 # Made in Dublin
 
-Everything for the site is available to be modified here. Please read the FAQ first on the website.
+Everything on madeindublin.org is hosted in Github and the code is in this repository. Please see [FAQ](http://madeindublin.org/#faq) for further information on Made in Dublin.
 
 
-## How to add a company
+## How do I add my company
 
-To add your entry, follow [the steps for forking the repo and creating a pull-request][fork repo] and update the `_data/entries.yml` file with your entry's information. The mandatory information to include is:
+If you meet criteria, submit this [Google form](https://docs.google.com/forms/d/1jI685ifs3zS6Rr1INYs8baKYdpVWl2Uphfof6i5MZpY/viewform) and expect response in about a week.
+
+Alternatively you can do a pull-request following these steps:
+
+Follow [the tutorial on how to for the repo and create a pull-request][fork repo] and update the `_data/entries.yml` file with your entry's information. The mandatory information to include is:
 
 ```
 - name: Entry Name
@@ -35,21 +39,22 @@ Save your entry at the bottom of the file (use spaces for the indentation, not t
 
 5. **twitter** (optional): leave off the `@`. Preferrably all lowercase.
 
-6. **facebook** (optional): preferrably all lowercase.
+6. **facebook** (optional): what goes after `facebook.com/`. Preferrably all lowercase.
 
 **Put the logo in the `_img` directory, not the `img` directory**.
 
 **Commit and push. Then open up a pull-request.**
 
-Lastly, it would be great if you linked to the site somewhere on your own website (ex. a link in your site's footer linking 'Made in Dublin' to this site).
+Lastly, it would be great if you linked back to madeindublin.org on your own website (ex. a link in your site's footer or the logo it self).
 
-If this all sounds too technical, feel free to [create an issue][create an issue] with the same information (logo, name, description, etc.) and one of the maintainers will add it in when they get time.
 
-## Editing existing entries
 
-Same deal as adding a new entry: [fork and create a pull-request][fork repo]. Only this time half the work is already done for you. Note that changes can be made by anyone, but preference will be given for employees/volunteers of the beta/startup/company.
 
-## Contributing
+## Editing existing company
+
+Same deal as adding a new entry: [fork and create a pull-request][fork repo]. Only this time half the work is already done for you. Note that changes can be made by anyone, but preference will be given for employees or volunteers of the company.
+
+## Contributing to the site
 
 To setup the environment locally, clone the repo and from the command line:
 
