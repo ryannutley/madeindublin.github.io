@@ -82,3 +82,8 @@
   q: Didn’t I see sites similar to “Made in Dublin”?
   a: >
       That is entirely possible. We would like to thank here <a href="http://nytm.org/made" target="_blank">Made in New York City</a> and <a href="http://montrealcollective.com/" target="_blank">Montreal Collective</a> for inspiration.
+
+- category: faq
+  q: Want to help or have any feedback?
+  a: >
+      Email us at <a href="mailto:hello@madeindublin.org">hello@madeindublin.org</a>

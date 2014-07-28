@@ -47,6 +47,7 @@ Save your entry at the bottom of the file (use spaces for the indentation, not t
 
 Lastly, it would be great if you linked back to madeindublin.org on your own website (ex. a link in your site's footer or the logo it self).
 
+## Add Made in Dublin on your company site
 
 
 
@@ -69,7 +70,29 @@ If you want to do more than just edit the `_data/entries.yml` file, you'll also 
 
 When completed, you'll be able to run the various Grunt commands provided from the command line (look in the GruntFile.js for the additional commands).
 
+To build the site to publish it run:
+
+	grunt
+
+To test the site while editing entries, html, etc. run:
+
+	grunt serve
+	
+To watch for changes in the entries, template etc and rebuild it automatically run:
+
+	grunt watch
+
 **Unfamiliar with `npm`? Don't have node installed?** That's okay. npm stands for [node packaged modules](http://npmjs.org/) and is a way to manage development dependencies through node.js. [Download and install node.js](http://nodejs.org/download/) before proceeding.
+
+## Contact info
+
+Who's behind this:
+
+- Alex Beregszaszi ([@axic](https://github.com/axic))
+- Gianfranco Palumbo ([@gianpaj](https://github.com/gianpaj))
+
+Want to help or have any feedback?
+Email us at [hello@madeindublin.org](mailto:hello@madeindublin.org)
 
 
 ## License
