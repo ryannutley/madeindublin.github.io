@@ -1268,19 +1268,18 @@ h6 {
   background-color: #a6a6a6;
   overflow-y: hidden;
 }
-.banner__heading {
-  font-size: 24px;
-  line-height: 30px;
+.banner__img {
   position: relative;
-  top: 50px;
-  color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  top: 40px;
+}
+.banner__img img {
+  width: 40%;
 }
 .banner__description {
   font-size: 12px;
   line-height: 24px;
   position: relative;
-  top: 70px;
+  top: 50px;
   color: #ffffff;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -1288,30 +1287,30 @@ h6 {
   .banner {
     height: 360px;
   }
-  .banner__heading {
-    font-size: 32px;
-    line-height: 42px;
-    top: 82px;
+  .banner__img img {
+    width: 40%;
   }
   .banner__description {
     font-size: 15px;
     line-height: 28px;
-    top: 100px;
+    top: 60px;
   }
 }
 @media (min-width: 768px) {
   .banner {
     height: 480px;
   }
-  .banner__heading {
-    font-size: 42px;
-    line-height: 56px;
-    top: 140px;
+  .banner__img {
+    position: relative;
+    top: 100px;
+  }
+  .banner__img img {
+    width: auto;
   }
   .banner__description {
     font-size: 18px;
     line-height: 20px;
-    top: 175px;
+    top: 125px;
   }
 }
 .banner--bg {
