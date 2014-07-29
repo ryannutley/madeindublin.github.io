@@ -200,7 +200,10 @@ module.exports = function(grunt) {
     watch: {
       less: {
         files: [ path.main.css.src + '**/*.less'],
-        tasks: ['compile-css'],
+        tasks: ['compile-css', 'compile-site'],
+        options: {
+          livereload: true
+        }
       },
 
       js: {
