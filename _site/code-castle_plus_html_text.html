@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Castle with text</title>
+    <title>Castle plus html text</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,10 +17,21 @@
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
 
     <style type="text/css">
-        #madeindublin img {
-            /* make the logo light gray */
-            /*-webkit-filter: invert(1);*/
-            width: 46%;
+        #madeindublin .icon {
+            float: right;
+            text-align: center;
+            position: relative;
+        }
+        #madeindublin .icon img {
+            /* 1 will turn the logo white */
+            -webkit-filter: invert(0.2);
+        }
+        #madeindublin .icon p {
+            margin-bottom: 0;
+            margin-top: -2px;
+            line-height: 18px;
+            font-size: 12px;
+            color: #414042;
         }
     </style>
 
@@ -51,7 +62,7 @@
       </div>
 
       <div class="jumbotron">
-        <h1>Castle with text</h1>
+        <h1>Castle plus html text</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
       </div>
@@ -91,14 +102,20 @@
                       <abbr title="Phone">P:</abbr> (123) 456-7890
                     </address>
                 </div>
-                <div class="col-lg-6">
-                    <div id="madeindublin" >
-                        <a href="http://madeindublin.org/" target="_blank" >
-                            <img src="/img/made-in-dublin-castle_with_text-310x122.png" class=" pull-right">
-                        </a>
+                <div class="col-lg-6 text-right">
+
+                    <div id="madeindublin">
+                        <div class="icon">
+                            <a href="http://madeindublin.org/" target="_blank">
+                                <img src="/img/made-in-dublin-castle_plus_html_text-64x64.png">
+                              </a>
+                              <a href="http://madeindublin.org/" target="_blank">
+                                <p><strong>MADE IN DUBLIN</strong></p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>  
         </div>
 
     </div> <!-- /container -->

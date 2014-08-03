@@ -53,6 +53,81 @@ Lastly, link back to [madeindublin.org](http://madeindublin.org) from your compa
 
 ## Add Made in Dublin on your company site
 
+---
+![image](img/eg-castle_with_text.jpeg?raw=true)
+
+
+```html
+<style type="text/css">
+    #madeindublin img {
+        /* make the logo light gray */
+        /*-webkit-filter: invert(1);*/
+        width: 46%;
+    }
+</style>
+
+<div id="madeindublin" >
+    <a href="http://madeindublin.org/" target="_blank" >
+        <img src="/img/made-in-dublin-castle_with_text-310x122.png" class=" pull-right">
+    </a>
+</div>
+```
+Example: [code-castle_with_text.html](/code-castle_with_text.html)
+
+---
+![image](img/eg-castle_plus_html_text.jpeg?raw=true)
+
+
+```html
+<style type="text/css">
+    #madeindublin .icon {
+        float: right;
+        text-align: center;
+        position: relative;
+    }
+    #madeindublin .icon img {
+        /* 1 will turn the logo white */
+        -webkit-filter: invert(0.2);
+    }
+    #madeindublin .icon p {
+        margin-bottom: 0;
+        margin-top: -2px;
+        line-height: 18px;
+        font-size: 12px;
+        color: #414042;
+    }
+</style>
+
+<div id="madeindublin">
+    <div class="icon">
+        <a href="http://madeindublin.org/" target="_blank">
+            <img src="/img/made-in-dublin-castle_plus_html_text-64x64.png">
+          </a>
+          <a href="http://madeindublin.org/" target="_blank">
+            <p><strong>MADE IN DUBLIN</strong></p>
+        </a>
+    </div>
+</div>
+```
+Example: [code-castle_plus_html_text.html](/code-castle_plus_html_text.html)
+
+---
+![image](img/eg-only_text.jpeg?raw=true)
+
+
+```html
+<style type="text/css">
+    #madeindublin a {
+        /* color: #EBEBEB; /* very light gray - for dark backgrounds */
+        color: #414042; /* dark gray - for light backgrounds */
+    }
+</style>
+
+<div id="madeindublin">
+    <a href="http://madeindublin.org/" target="_blank">Made In Dublin</a>
+</div>
+```
+Example: [code-only_text.html](/code-only_text.html)
 
 
 ## Editing existing company

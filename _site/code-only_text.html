@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Castle with text</title>
+    <title>Narrow Jumbotron Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,10 +17,13 @@
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
 
     <style type="text/css">
-        #madeindublin img {
-            /* make the logo light gray */
-            /*-webkit-filter: invert(1);*/
-            width: 46%;
+        body {
+            /*background-color: #38363d;*/
+        }
+
+        #madeindublin a {
+            /* color: #EBEBEB; /* very light gray - for dark backgrounds */
+            color: #414042; /* dark gray - for light backgrounds */
         }
     </style>
 
@@ -51,7 +54,7 @@
       </div>
 
       <div class="jumbotron">
-        <h1>Castle with text</h1>
+        <h1>Jumbotron heading</h1>
         <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
       </div>
@@ -84,21 +87,13 @@
             <div class="row">
                 <div class="col-lg-6">
                     <p>&copy; Company 2014</p>
-                    <address>
-                      <strong>Twitter, Inc.</strong><br>
-                      795 Folsom Ave, Suite 600<br>
-                      San Francisco, CA 94107<br>
-                      <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
                 </div>
-                <div class="col-lg-6">
-                    <div id="madeindublin" >
-                        <a href="http://madeindublin.org/" target="_blank" >
-                            <img src="/img/made-in-dublin-castle_with_text-310x122.png" class=" pull-right">
-                        </a>
+                <div class="col-lg-6 text-right">
+                    <div id="madeindublin">
+                        <strong><a href="http://madeindublin.org/" target="_blank">MADE IN DUBLIN</a></strong>
                     </div>
                 </div>
-            </div>
+          </div>
         </div>
 
     </div> <!-- /container -->
