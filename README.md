@@ -7,7 +7,7 @@ Everything on madeindublin.org is hosted in Github and you can find the code in 
 
 If you meet criteria, submit this [Google form](https://docs.google.com/forms/d/1jI685ifs3zS6Rr1INYs8baKYdpVWl2Uphfof6i5MZpY/viewform) and expect response in about a week.
 
-Alternatively you can do a pull-request following these steps:
+Alternatively you can submit a pull-request following these steps:
 
 Follow this tutorial, [how to fork a repo and create a pull-request][fork repo] and update the `_data/entries.yml` file with your company's information.
 
@@ -51,8 +51,7 @@ Commit and push. Then open up a pull-request.
 
 Lastly, link back to [madeindublin.org](http://madeindublin.org) from your company website using a link or adding logo in the footer.
 
-## Add Made in Dublin on your company site
-
+## Made in Dublin html code for logo or text
 ---
 ![image](img/eg-castle_with_text.jpeg?raw=true)
 
