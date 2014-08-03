@@ -164,10 +164,14 @@ To watch for changes in the entries, template etc and rebuild it automatically r
 
 ## Contact info
 
-Who's behind this:
+Who's behind this?
 
 - Alex Beregszaszi ([@axic](https://github.com/axic))
 - Gianfranco Palumbo ([@gianpaj](https://github.com/gianpaj))
+
+Who designed the logo?
+
+- [Jade O'Connor](http://hibeam.co)
 
 Want to help or have any feedback?
 Email us at [hello@madeindublin.org](mailto:hello@madeindublin.org)
