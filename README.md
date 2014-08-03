@@ -1,6 +1,6 @@
-# Made in Dublin
+![image](img/made-in-dublin-castle_with_text-310x122.png?raw=true)
 
-Everything on madeindublin.org is hosted in Github and the code is in this repository. Please see [FAQ](http://madeindublin.org/#faq) for further information on Made in Dublin.
+Everything on madeindublin.org is hosted in Github and you can find the code in this repository. Please see the [FAQ](http://madeindublin.org/#faq) for further information on Made in Dublin.
 
 
 ## How do I add my company
@@ -9,12 +9,14 @@ If you meet criteria, submit this [Google form](https://docs.google.com/forms/d/
 
 Alternatively you can do a pull-request following these steps:
 
-Follow [the tutorial on how to for the repo and create a pull-request][fork repo] and update the `_data/entries.yml` file with your entry's information. The mandatory information to include is:
+Follow this tutorial, [how to fork a repo and create a pull-request][fork repo] and update the `_data/entries.yml` file with your company's information.
+
+For example:
 
 ```
-- name: Entry Name
-  category: beta | startup | company
-  url: www.name.com
+- name: Company Name
+  category: <beta | startup | company>
+  url: www.companyname.com
   description: Some nice description about the entry. Preferrably between 125-175 characters. Like a long tweet.
 ```
 
@@ -23,29 +25,31 @@ Optionally, you can add:
 ```
 - ...
   ...
-  twitter: entryname
-  facebook: entryname
+  twitter: companyname
+  facebook: companyname
 ```
 
-Save your entry at the bottom of the file (use spaces for the indentation, not tabs — YAML doesn't like tabs). Note a couple of guidelines (also see the existing entries for a better idea of what to write):
+Save your entry at the bottom of the file (use spaces for the indentation).
 
-1. **name**: Name of the startup.
+Note a couple of guidelines (also see the existing entries for a better idea of what to write):
 
-2. **category**: Use singular categories (beta instead of betas). Only list each entry as one, otherwise you might break something.
+1. **name**: Name of the beta, startup or company.
 
-3. **url**: Don't put in the `https://` or `http://`. Preferably, don't put in the `/en` or `/fr` either (if it's a bilingual site) — just link to the root domain since it will likely be the more popular version. Leave off the trailing `/` if your website supports it.
+2. **category**: Choose between `beta`, `startup` or `company`
 
-4. **description**: Ease off the *marketing lingo* and definitely leave off the *investor speak* (ie there better not be any appearences of 'digital solution' or 'synergy' anywhere in your description). Use the [third-person narrative](http://en.wikipedia.org/wiki/Third_person) preferrably (ie. don't say 'Shopify is the best platform for YOU to build an online store').
+3. **url**: Don't include `https://` or `http://`. Leave off the trailing `/` if your website supports it.
+
+4. **description**: Ease off the *marketing lingo* and the *investor speak*. Use the [third-person narrative](http://en.wikipedia.org/wiki/Third_person) preferrably (ie. don't say 'Shopify is the best platform for YOU to build an online store').
 
 5. **twitter** (optional): leave off the `@`. Preferrably all lowercase.
 
-6. **facebook** (optional): what goes after `facebook.com/`. Preferrably all lowercase.
+6. **facebook** (optional): the facebook page username or what goes after `facebook.com/`. Preferrably all lowercase.
 
-**Put the logo in the `_img` directory, not the `img` directory**.
+Put the logo in the `_img` directory, **not** the `img` directory.
 
-**Commit and push. Then open up a pull-request.**
+Commit and push. Then open up a pull-request.
 
-Lastly, it would be great if you linked back to madeindublin.org on your own website (ex. a link in your site's footer or the logo it self).
+Lastly, link back to [madeindublin.org](http://madeindublin.org) from your company website using a link or adding logo in the footer.
 
 ## Add Made in Dublin on your company site
 
